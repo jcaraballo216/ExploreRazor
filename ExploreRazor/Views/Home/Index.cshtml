@@ -1,0 +1,41 @@
+﻿@{
+    int num1 = 1;
+    int num2 = 2;
+    int result = num1 + num2;
+}
+<h2> Sum of @num1 + @num2 = @result</h2>
+
+@{
+    string number = "32";
+    int num;
+
+    if (number.IsInt() == true)
+    {
+        num = number.AsInt();
+        <h5>@num  is Integer Value</h5>
+    }
+    else
+    {
+        <h5>@number  is Not Integer</h5>
+    }
+}
+@{
+    var v = "12.52";
+    float f;
+    if (v.IsFloat() == true)
+
+    {
+        f = v.AsFloat();
+        <h5>@f</h5>
+    }
+}
+
+@{ 
+    for(int i = 12; i < 43; i++)
+    {
+        if(i % 2 == 0)
+        {
+            <span>@i</span>
+        }
+    }
+}
